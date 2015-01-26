@@ -29,6 +29,7 @@ gem 'spring',        group: :development
 
 gem 'haml-rails'
 gem 'simple_form'
+gem 'redcarpet'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
