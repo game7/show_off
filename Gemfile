@@ -7,6 +7,7 @@ gem 'rails', '4.1.9'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+gem 'bootstrap-sass', '~> 3.3.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -41,4 +42,3 @@ gem 'spring',        group: :development
 # Use Rsec and Capybara for testing
 gem 'rspec-rails', '3.0.1', group: :development
 gem 'capybara', '2.3.0', group: :development
-
