@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
+//= require inline-attachment
+//= require jquery.inline-attachment
