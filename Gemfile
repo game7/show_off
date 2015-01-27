@@ -35,6 +35,8 @@ gem "rmagick"
 gem "fog"
 gem "carrierwave"
 
+gem 'acts-as-taggable-on'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

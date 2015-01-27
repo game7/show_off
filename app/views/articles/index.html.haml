@@ -9,6 +9,7 @@
     .article
       .title= link_to article.title, article
       .summary= article.summary
+      .tags= "Tags: #{article.tag_list}"
       .actions
         = link_to 'Edit', edit_article_path(article)
 

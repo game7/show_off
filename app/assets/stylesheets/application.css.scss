@@ -17,6 +17,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  
+ a {
+   text-decoration: underline;
+ }
+ 
  .header {
    border-bottom: 1px solid #666;
    margin-bottom: 10px;

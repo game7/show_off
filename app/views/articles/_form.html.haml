@@ -1,7 +1,8 @@
 = simple_form_for(@article) do |f|
   = f.error_notification          
   = f.input :title
-  = f.input :summary  
+  = f.input :summary
+  = f.input :tag_list, hint: 'Separated by commas'  
   = f.input :content
   .actions
     = f.button :submit
