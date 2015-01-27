@@ -1,4 +1,5 @@
-$(function() {
+
+var initInlineAttachment = function() {
   $('#article_content').inlineattachment({
     uploadUrl: '/images',
     uploadFieldName: 'image[file]',
@@ -9,5 +10,8 @@ $(function() {
     extraHeaders: { 
       "Accept": "application/json" 
     }
-  })
-})
+  })  
+}
+
+$(initInlineAttachment);
+$(document).on('page:load', initInlineAttachment)
