@@ -50,3 +50,5 @@ gem "carrierwave"
 # Use Rsec and Capybara for testing
 gem 'rspec-rails', '3.0.1', group: :development
 gem 'capybara', '2.3.0', group: :development
+
+gem 'rails_12factor', group: :production
