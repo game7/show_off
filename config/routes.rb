@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'tags/:tag', to: 'articles#index', as: :tag
   resources :images
   resources :articles
   root to: 'articles#index'

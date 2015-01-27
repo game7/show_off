@@ -1,16 +1,22 @@
 
 .header
   .actions
+    = link_to 'All Articles', articles_path, :class => "btn btn-default" if params[:tag]
     = link_to 'New Article', new_article_path, :class => "btn btn-default"
   %h1 Articles
 
-.articles
-  - @articles.each do |article|
-    .article
-      .title= link_to article.title, article
-      .summary= article.summary
-      .tags= "Tags: #{article.tag_list}"
-      .actions
-        = link_to 'Edit', edit_article_path(article)
-
-
+.row
+  .col-sm-8.articles
+    - @articles.each do |article|
+      .article
+        .title= link_to article.title, article
+        .summary= article.summary
+        %p.tags
+          = "Tags: "
+          != article.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+        .actions
+          = link_to 'Edit', edit_article_path(article)
+  .sidebar.col-sm-4
+    #tag_cloud
+      - tag_cloud Article.tag_counts, %w{s m l} do |tag, css_class|
+        = link_to tag.name, tag_path(tag.name), class: css_class

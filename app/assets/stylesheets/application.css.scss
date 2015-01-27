@@ -17,14 +17,20 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  
- a {
-   text-decoration: underline;
- }
- 
  .header {
-   border-bottom: 1px solid #666;
+   border-bottom: 1px solid #CCC;
    margin-bottom: 10px;
    .actions {
      float: right;
    }
+ }
+ 
+ #tag_cloud {
+   line-height: 1.6em;
+   border: solid 1px #CCC;
+   text-align: center;
+   padding: 5px;
+   .s { font-size: .8em; }
+   .m { font-size: 1.2em; }
+   .l { font-size: 1.6em; }
  }
